@@ -3,9 +3,11 @@ const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
-const Layout = require('express-ejs-layouts')
+const Layout = require('express-ejs-layouts');
+const session = require('express-session');
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
+const userModel = require('./models/userModel')
 const hotelesRouter = require('./routes/hotelesRoutes');
 const ofertasRouter = require('./routes/ofertasRoutes');
 const paquetesRouter = require('./routes/paquetesRoutes');
@@ -21,6 +23,27 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(session({
+  secret:"Mi ultra secreto",
+  resave:false,
+  saveUninitialized:true
+}));
+
+app.use((req,res,next)=>{
+  if(req.cookies.userId != undefined && req.session.user==undefined){
+    let idCookie = req.cookies.userId;
+    let user = userModel.getUserById(idCookie);
+    req.session.user=user;
+    console.log(user);
+  }
+  next();
+})
+app.use((req,res,next)=>{
+  if(req.session.user!=undefined){
+    res.locals.user = req.session.user;
+  }
+  return next();
+});
 
 app.use(Layout)
 app.use('/', indexRouter);

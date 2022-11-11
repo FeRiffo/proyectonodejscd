@@ -1,19 +1,14 @@
 const path =require('path')
 const fs = require('fs')
-const json_data = fs.readFileSync('./db/hoteles.json','utf-8');
+const json_data = fs.readFileSync('./db/paquetes.json','utf-8');
 let db = JSON.parse(json_data); 
-const formidable =require('formidable')
-const form = formidable({
-    uploadDir:path.join(__dirname,'../db')
-})
-const modeloDatos=require('../module/modeloDatos');
 
 const controller = {
     list:function(req, res, next) {
-        res.render('hoteles',{title:"Hoteles",data:db});
+        res.render('paquetes',{title:"Paquetes",data:db});
       },
     add:(req,res)=>{
-        res.render('addHotel')
+        res.render('addPaquetes')
     },
     addPost:(req,res)=>{
        form.parse(req,(err,fields,files)=>{
@@ -46,17 +41,17 @@ const controller = {
             }
             db = [...db,datos];
             let newData = JSON.stringify(db);
-            fs.writeFileSync('./db/hoteles.json',newData,'utf-8')
-            res.redirect('/hoteles')
+            fs.writeFileSync('./db/paquetes.json',newData,'utf-8')
+            res.redirect('/paquetes')
         }else{
-            res.redirect('/hoteles')
+            res.redirect('/paquetes')
         }
        })
     },
     edit:(req,res)=>{
         let id = req.params.id;
-        let hotel = modeloDatos.getOne(db,id);
-        res.render('editHotel',{hotel:hotel})
+        let paquetes = modeloDatos.getOne(db,id);
+        res.render('editPaquetes',{paquetes:paquetes})
     },
     editPost:(req,res)=>{
         
@@ -81,8 +76,8 @@ const controller = {
         
         db = modeloDatos.update(db,req.body.id,misDatos)
         let newData = JSON.stringify(db);
-            fs.writeFileSync('./db/hoteles.json',newData,'utf-8')
-        res.redirect('/hoteles')
+            fs.writeFileSync('./db/paquetes.json',newData,'utf-8')
+        res.redirect('/paquetes')
     },
     delete:(req,res)=>{
         let id = req.body.id;
@@ -93,8 +88,8 @@ const controller = {
         }
         let info = modeloDatos.delete(db,id);
         let newData = JSON.stringify(info);
-        fs.writeFileSync('./db/hoteles.json',newData,'utf-8')
-        res.redirect('/hoteles/delete')
+        fs.writeFileSync('./db/paquetes.json',newData,'utf-8')
+        res.redirect('/paquetes/delete')
     },
     deleteDirect:(req,res)=>{
         res.render('aviso')

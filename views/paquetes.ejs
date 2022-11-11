@@ -1,0 +1,50 @@
+<main>
+    <section>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <% for( let i = 0; i < data.length; i++ ) { %>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <img class="card-img-top" 
+                                src="https://proyecto125.herokuapp.com/images/<%= data[i].src%>" alt="">
+                                <p class="card-text my-5"><%= data[i].nombre %> </p>
+                                <div class="m-3">
+                                    <p>Ingreso: <%= data[i].ingreso %> </p>
+                                    <p>Egreso: <%= data[i].egreso %> </p>
+                                    <p>Paquetes: <%= data[i].paquetes %> </p>
+                                    <p>Estadia: <%= data[i].estadia %> </p>
+                                    <p>Costo: <%= data[i].costo %> </p>
+                                    <p>Direccion: <%= data[i].direccion %> </p>
+                                    <p>Ubicación: <%= data[i].ubicacion %> </p>
+                                    <h3>Servicios</h3>
+                                    <ul>
+                                    </ul>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <form action="/paquetes/edit/<%- data[i].id %> " method="get">
+                                        <button type="submit" class="btn btn-sm btn-success mx-1">
+                                            Modificar
+                                        </button>
+                                    </form>
+                                    <form action="/paquetes/delete" method="post">
+                                        <input type="text" name="id" id="" value="<%- data[i].id %>" hidden>
+                                        <button type="submit" class="btn btn-sm btn-danger mx-1">
+                                            Eliminar
+                                        </button>
+                                    </form>
+                                        
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <% } %>
+
+            </div>
+        </div>
+    </section>
+</main>

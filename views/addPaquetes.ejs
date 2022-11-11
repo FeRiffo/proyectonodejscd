@@ -1,0 +1,64 @@
+section class="container py-5 bg-danger bg-opacity-25">
+    <h2 class="text-center text-primary">
+        Agregar Paquetes
+    </h2>
+    <div class="row d-flex justify-content-center">
+        <form  class="w-50" action="/paquetes/add" method="post" enctype="multipart/form-data">
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input class="form-control" type="text" name="nombre" id="nombre">
+            </div>
+            
+            <div class="mb-3">
+                <label for="ubicacion" class="form-label">Ubicación</label>
+                <input class="form-control" type="text" name="ubicacion" id="ubicacion">
+            </div>
+            <div class="mb-3">
+                <label for="ingreso" class="form-label">Ingreso</label>
+                <input class="form-control" type="text" name="ingreso" id="ingreso">
+            </div>
+            <div class="mb-3">
+                <label for="egreso" class="form-label">Egreso</label>
+                <input class="form-control" type="text" name="egreso" id="egreso">
+            </div>
+            <div class="mb-3">
+                <label for="paquetes" class="form-label">Paquetes</label>
+                <input class="form-control" type="text" name="paquetes" id="paquetes">
+            </div>
+            <div class="mb-3">
+                <label for="costo" class="form-label">Costo</label>
+                <input class="form-control" type="text" name="costo" id="costo">
+            </div>
+            <div class="mb-3">
+                <label for="estadia" class="form-label">Estadia</label>
+                <input class="form-control" type="text" name="estadia" id="estadia">
+            </div>
+            <div class="mb-3">
+                <label for="direccion" class="form-label">Dirección</label>
+                <input class="form-control" type="text" name="direccion" id="direccion">
+            </div>
+            <div class="mb-3 form-check">
+                <input class="form-check-input" type="checkbox" name="holtel" id="holtel" value="Cancha de Tennis">
+                <label for="holtel" class="form-check-label">Hotel</label>
+            </div>
+            <div class="mb-3 form-check">
+                <input class="form-check-input" type="checkbox" name="vuelo" id="vuelo" value="Zona privada de playa">
+                <label for="vuelo" class="form-check-label">Vuelo</label>
+            </div>
+            <div class="mb-3 form-check">
+                <input class="form-check-input" type="checkbox" name="traslado" id="traslado" value="Pileta Climatizada">
+                <label for="traslado" class="form-check-label">Traslado</label>
+            </div>
+
+            <div>
+                <input type="text" name="title" value="paquetes" hidden>
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label">File:</label>
+                <input class="mb-3" type="file" name="archivo" />
+            </div>
+            <button type="submit" class="btn btn-primary">Agregar</button>
+        </form>
+    </div>
+
+</section>

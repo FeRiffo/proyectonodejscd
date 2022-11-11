@@ -1,1 +1,16 @@
-[]
+[
+    {
+        "nombre": "Hotel Tunquelén",
+        "ubicacion": "Bariloche",
+        "ingreso": "2022-03-24",
+        "egreso": "2022-04-21",
+        "src": "https://es.gopatagonic.com/wp-content/uploads/2021/04/Hoteles-en-Bariloche.jpg",
+        "estadia": "por día",
+        "costo": "15000",
+        "servicio": [
+            "Hotel",
+            "Traslado"
+        ],
+        "id": 1
+    }
+]
