@@ -1,4 +1,4 @@
-const users= require('../db/usuarios.json');
+const users= require('../db/usuario.json');
 module.exports={
     getUser:(email)=>{
         for (let index = 0; index < users.length; index++) {

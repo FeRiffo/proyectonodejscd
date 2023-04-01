@@ -1,0 +1,86 @@
+[
+    {
+        
+        "nome": "Mariana Romero",
+        "cpfoucnpj":"123132132",
+        "telefone": "011 4394-3605",
+        "email": "romari@test.com",
+        "endereço": "Av. Juan B justo 550, B2054 Palermo, CABA",
+        "pfpj":"465987654",
+        "servicios":[],
+        "activo":true,
+        "tipo_usuario":"cliente",
+        "password":"125896",
+        "forma_de_pago":["efectivo","debito","crédito"]
+    },
+    {
+        
+        "nome": "Ana Sanchez",
+        "cpfoucnpj":"123132132",
+        "telefone": "011 4394-3605",
+        "email": "ana@test.com",
+        "endereço": "Av. Corrientes 550, B2054, Palermo, Rio Janeiro",
+        "pfpj":"465987654",
+        "servicios":[],
+        "activo":true,
+        "tipo_usuario":"cliente",
+        "password":"125896",
+        "forma_de_pago":["efectivo","debito","crédito"]
+    },
+    {
+        
+        "nome": "Juan Gomez",
+        "cpfoucnpj":"123132132",
+        "telefone": "011 4394-3605",
+        "email": "juan@test.com",
+        "endereço": "Av. Juan B justo 3236, B24658 Almagro, Rio de Contas, Bahia",
+        "pfpj":"465987654",
+        "servicios":[],
+        "activo":true,
+        "tipo_usuario":"cliente",
+        "password":"125896",
+        "forma_de_pago":["efectivo","debito","crédito"]
+    },
+    {
+        
+        "nome": "Mariana Romero",
+        "cpfoucnpj":"123132132",
+        "telefone": "011 4394-3605",
+        "email": "romari@test.com",
+        "endereço": "Av. Juan B justo 550, B2054 Palermo, CABA",
+        "pfpj":"465987654",
+        "servicios":[],
+        "activo":true,
+        "tipo_usuario":"cliente",
+        "password":"125896",
+        "forma_de_pago":["efectivo","debito","crédito"]
+    },
+    {
+        
+        "nome": "Mariana Romero",
+        "cpfoucnpj":"123132132",
+        "telefone": "011 4394-3605",
+        "email": "romari@test.com",
+        "endereço": "Av. Juan B justo 550, B2054 Palermo, CABA",
+        "pfpj":"465987654",
+        "servicios":[],
+        "activo":true,
+        "tipo_usuario":"cliente",
+        "password":"125896",
+        "forma_de_pago":["efectivo","debito","crédito"]
+    },
+    {
+        
+        "nome": "Mariana Romero",
+        "cpfoucnpj":"123132132",
+        "telefone": "011 4394-3605",
+        "email": "romari@test.com",
+        "endereço": "Av. Juan B justo 550, B2054 Palermo, CABA",
+        "pfpj":"465987654",
+        "servicios":[],
+        "activo":true,
+        "tipo_usuario":"cliente",
+        "password":"125896",
+        "forma_de_pago":["efectivo","debito","crédito"]
+    }
+ ]

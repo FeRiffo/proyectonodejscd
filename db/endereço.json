@@ -1,0 +1,165 @@
+[{
+    "cliente": "Nita Rocha",
+    "rua": "Rua Rocha 2523", 
+    "complemento": "Paulo ll depto 3388",
+    "cidade":"Salvador",
+    "estado":"Bahia",
+    "cep":"465-460"
+    
+},
+{
+    "cliente": "Mariana Romero",
+    "rua": "Rua  2523", 
+    "complemento": "Av. Juan B justo 550, B2054 Palermo, CABA",
+    "cidade":"Salvador",
+    "estado":"Bahia",
+    "cep":"465-460"
+    
+},
+{
+    "cliente": "Ana Sanchez",
+    "rua": "Rua Rocha 2523", 
+    "complemento": "Paulo ll depto 33",
+    "cidade":"Salvador",
+    "estado":"Bahia",
+    "cep":"465-460"
+    
+},
+{
+    "cliente": "Juan Gomez",
+    "rua": "Rua Rocha 2523", 
+    "complemento": "Av. Juan B justo 550, B2054 Palermo, CABA",
+    "cidade":"Salvador",
+    "estado":"Bahia",
+    "cep":"465-460"
+    
+},
+{
+    "cliente": "Nita Rocha",
+    "rua": "Rua Rocha 2523", 
+    "complemento": "Paulo ll depto 33",
+    "cidade":"Salvador",
+    "estado":"Bahia",
+    "cep":"465-460"
+    
+},
+
+{
+    "nombre": "Hotel Tunquelén",
+    "ubicacion": "Buenos Aires",
+    "ingreso": "2022-01-24",
+    "egreso": "2022-01-26",
+    "paquete": "Bariloche",
+    "src": "https://media.staticontent.com/media/pictures/9845587c-21d7-4822-be21-bc30fcc47836",
+    "estadia": "3 días y 2 noches",
+    "costo": "80000",
+    "direccion": " Av. Exequiel Bustillo 24500, San Carlos de Bariloche, Río Negro",
+    "servicio": [
+        "Hotel",
+        "Vuelo",
+        "Traslado"
+    ],
+    "id": 2
+},
+{
+    "nombre": "Hotel Tunquelén",
+    "ubicacion": "Buenos Aires",
+    "ingreso": "2022-01-17",
+    "egreso": "2022-01-19",
+    "paquete": "Bariloche",
+    "src": "https://media.staticontent.com/media/pictures/9845587c-21d7-4822-be21-bc30fcc47836",
+    "estadia": "2 días y 2 noches",
+    "costo": "80500",
+    "direccion": " Av. Exequiel Bustillo 24500, San Carlos de Bariloche, Río Negro",
+    "servicio": [
+        "Hotel",
+        "Vuelo",
+        "Traslado"
+    ],
+    "id": 3
+},
+{
+    "nombre": "El Halcón  dorado",
+    "ubicacion": "BUenos Aires",
+    "ingreso": "2022-03-01",
+    "egreso": "2022-03-30",
+    "paquete": "Bariloche",
+    "src": "https://www.cucinare.tv/wp-content/uploads/2019/10/Bariloche-Centro-C%C3%ADvico.jpg",
+    "estadia": "por noche",
+    "costo": "10000",
+    "direccion": "En el corazón de la Patagonia Argentina",
+    "servicio": [
+        "Hotel",
+        "Vuelo",
+        "Traslado"
+    ],
+    "id": 4
+},
+{
+    "nombre": "Isla Victoria",
+    "ubicacion": "Buenos Aires",
+    "ingreso": "2022-03-22",
+    "egreso": "2022-04-30",
+    "paquete": "Bariloche",
+    "src": "https://cdn.getyourguide.com/img/location/5d147ae3630c1.jpeg/92.jpg",
+    "estadia": "Por Noche",
+    "costo": "120000",
+    "direccion": "Isla Victoria, en el lago Nahuel Huapi, en el corazón de la Patagonia Argentina",
+    "servicio": [
+        "Hotel",
+        "Vuelo",
+        "Traslado"
+    ],
+    "id": 5
+},
+{
+    "nombre": "Hotel Fin del Mundo",
+    "ubicacion": "Buenos Aires",
+    "ingreso": "2022-03-22",
+    "egreso": "2022-04-30",
+    "paquete": "Ushuaia",
+    "src": "https://www.costacruceros.com/content/dam/costa/costa-magazine/article-images/what-to-see-in-ushaia/ushuaia-383x250.jpg.image.694.390.low.jpg",
+    "estadia": "Por Noche",
+    "costo": "90000",
+    "direccion": "Calle Teniente Ramayon 840, Ushuaia Argentina",
+    "servicio": [
+        "Hotel",
+        "Vuelo",
+        "Traslado"
+    ],
+    "id": 6
+},
+{
+    "nombre": "Hotel Fin del Mundo",
+    "ubicacion": "Buenos Aires",
+    "ingreso": "2022-03-01",
+    "egreso": "2022-04-30",
+    "paquete": "Ushuaia",
+    "src": "https://www.clarin.com/img/2018/04/05/que-hacer-en-ushuaia-los___r1uqK7HoG_1256x620__1.jpg",
+    "estadia": "Por Noche",
+    "costo": "90000",
+    "direccion": "Calle Lavalle 580, Ushaia Argentina",
+    "servicio": [
+        "Hotel",
+        "Vuelo",
+        "Traslado"
+    ],
+    "id": 7
+},
+{
+    "nombre": "https://media-cdn.tripadvisor.com/media/photo-s/18/ff/6d/5c/nuestra-piscina.jpg",
+    "ubicacion": "Buenos Aires",
+    "ingreso": "2022-06-01",
+    "egreso": "2022-06-04",
+    "paquete": "San Martin de los andes",
+    "src": "https://media-cdn.tripadvisor.com/media/photo-s/18/ff/6d/5c/nuestra-piscina.jpg",
+    "estadia": "4 días y 3 noches",
+    "costo": "120000",
+    "direccion": "Calle Teniente Ramayon 840, San Martín de los Andes Q8370DLH Argentina",
+    "servicio": [
+        "Hotel",
+        "Vuelo",
+        "Traslado"
+    ],
+    "id": 8
+}]

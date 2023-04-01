@@ -1,4 +1,4 @@
-const userModel = require('../models/userModel')
+const userModel = require('../module/userModel')
 const controller = {
     login: function (req, res, next) {
         res.render('login',{title:"Ingresar",error:''});
